@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
 </head>
+
 <body>
-    <p>teste</p>
+    <h2>TABELA SIMPLES</h2>
+    <table>
+        <caption>Pessoas por idade</caption> <!-- descrição tabela -->
+
+        <thead>
+            <tr>
+                <!--table row - linha-->
+                <th>Nome</th> <!-- table head - cabeçalho -->
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Lua</td> <!-- table description - conteudo-->
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>2 Pessoas</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- segurando o alt, seleciona mais de uma linha para inserir elementos -->
+
+    <h2>Tabela Complexa</h2>
+
+    <table>
+        <caption>Produto produzidos x vendidos</caption>
+
+        <!--Pesonalização de colunas-->
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: red;">
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th> <!-- rowspan - espande a linha-->
+                <th colspan="2" scope="colgroup">Mc donalds</th> <!-- colspan - espande a coluna-->
+                <th colspan="2" scope="colgroup">Burguer King</th>
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Lanches</th>
+                <td>300</td>
+                <td>300</td>
+                <td>300</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <th scope="row">Sorvetes</th>
+                <td>1000</td>
+                <td>1000</td>
+                <td>500</td>
+                <td>500</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
 </body>
+
 </html>
