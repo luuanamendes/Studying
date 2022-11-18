@@ -1,0 +1,50 @@
+- git init (vai inicializar seu projeto)
+
+- git status (verificar como está seu projeto e se ja tem alteraçoes)
+
+- git add “nomedoarquivo” (adicionar apenas um arquivo)
+
+- git add . (seleciona todos de uma vez)
+
+- git commit -m “descriçãoAqui” (adicionar a descrição do que esta sendo feito)
+
+- git remote add origin urlDoProjetoNoGitHub (seleciona qual é o prjeto destino)
+
+-git push --set-upstream origin nomeDaBranch (seleciona para qual branch do projeto será enviado a alteração)
+
+-git reflog (para verificar todas as versões de alteraçoes, vai aparecer todas as versões com um codigo e a descrição que voce escreveu na frente)
+
+-git reset --hard codigoAqui (para voltar a versao anterior)
+
+-git branch (mostra quais sao as branchs disponiveis e a que estiver com um * é a que está sendo usada)
+
+-git branch newBranch (está criando uma nova branch com nome newBranch)
+
+-git checkout nomeDaBranch (para trocar de branch)
+
+-git pull (comando para puxar o codigo da branch atual)
+
+-git merge nameBranch (está unindo o codigo da branch atual, com a branch nameBranch)
+
+-Criar uma branch igual a principal e atualizar a principal depois
+	git pull
+	git checkout -b (NomeDaNovaBranch)(NomeDaBranchPrincipal)
+	ex: git checkout -b newBranch main
+	git branch (para checar de deu certo, mudou de branch)
+		faz as alteraçoes/adiciona arquivos
+	git status
+	git add . 
+	git commit -m “mensagem”
+	git checkout main
+	git pull
+	git merge newBranch
+	git push
+
+-pull request
+	seleciona branch principal ← sua Branch
+	create pull request
+
+-touch .gitignore (vai criar uma aquivo de texto dentro da pasta do projeto)
+	colocar o nome de todos os aquivos e pastas que eu nao quero que suba dentro do aquivo de texto .gitignore
+	git status (para conferir se deu certo)
+	ai pode dar o git add .
