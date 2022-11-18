@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc / Content - css</title>
+
+    <style>
+        div {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 2em;
+            /*fonte para serve como padrão, multiplicando por 2
+                        rem pega o tamanho do root/html, se baseia no padrao
+            */
+        }
+
+        li {
+            font-size: 80%; /* funciona em cascata, se não diferenciar os li*/
+        }
+        body{
+            height: 100vh;
+            width: 100vh;
+        }
+
+        .box{
+            width: calc(100% - 20%);
+            height: 300px;
+            background-color: red;
+        }
+        .box::after{
+            content: "i'm crazy";/* STRING É UM TEXTO ENVOLTO EM ""  */
+            color: white;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>titulo da pagina</h1>
+    </div>
+
+    <ul>
+        <li>Um</li>
+        <li>Dois</li>
+        <li>Três
+            <ul>
+                <li>Três A</li>
+                <li>Três B</li>
+                <ul>
+                    <li>Três B 2</li>
+                </ul>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="box"></div>
+</body>
+
+</html>

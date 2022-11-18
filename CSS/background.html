@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            width: 100%;
+            height: 100px;
+            background-image: url("background.jpg");
+            background-origin: border-box;
+        }
+
+        main{
+            background-color: #535353;
+            margin-top: 10px;
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; /*fundo fixo, o que move é o conteudo*/   
+        }
+
+        footer{
+            background-image: url("background.jpg");
+            width: 100%;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            background-size: cover;
+            border: 1px solid black;
+
+            /*shorthand - anula o de cima*/
+            background:#1b1b1b url("background.jpg") no-repeat center top / 100% border-box fixed;
+        }
+        
+        .box{
+            background: linear-gradient(35deg, black, rgb(172, 46, 67));
+            background:radial-gradient(black, green);
+
+            /*usar dois backgrounds*/
+            background: linear-gradient(rgb(44, 44, 44, 0.5), rgb(168, 15, 161, .5)), url("bg.jpg") no-repeat right top / cover border-box;
+
+            
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquid, ad magnam laboriosam est facere asperiores nostrum maiores animi aperiam delectus tenetur natus quisquam doloribus, expedita velit soluta ea sint?</h1>
+    </main>
+    <footer>
+        <div class="box">
+
+        </div>
+
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,64 @@
+/*@import - incluir um css externo*/
+/*font-face - fontes externas*/
+@import url("linkdafonte.com");
+/*@import dar preferencia para importar fonts com o link no html*/
+ 
+/*
+!important - mais forte de todos, usar em caso de emergencia
+<style> - mais forte
+id # - menos forte
+div . - forte
+h1 - mais fraco
+*/
+
+/*@media - regras condicionais para dispositivos*/
+@media (min-width: 500px) {
+    /*rules here*/
+}
+
+/*@keyframes - antimation*/
+@keyframes nameanimation {
+    /*rules here*/
+}
+
+/* * atribui para todos os seletores */
+*{
+    margin: 0;
+}
+
+/* . serve para chamar o seletor com uma class especifica */
+.menu{
+    background-color: black;
+    margin: 0; /* espaço por volta/fora da caixa */
+    padding: 30; /* espaço por dentro da caixa */
+}
+
+h1{
+    color:blue;
+}
+
+/*
+selector = h1
+declaration = tudo que esta dentro do { }
+properties = color:
+properties value = blue
+*/
+
+/*shorthand - deixar tudo mais simples*/
+h2{
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+
+    /* o que vem depois, sobrescreve e anula o anterior, se faltar um style ele coloca o padrao*/
+    font: italic bold .8em/1.2 Arial, sans-serif;
+}
+
+/*
+função
+
+nome(argumento);
+rgb(0,0,0);
+*/
