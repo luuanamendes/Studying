@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video e Som</title>
+</head>
+
+<body>
+    <!--
+    propriedade preload="none" = não faz nada sem a ação do usuario (nao aparece nem o tempo/imagem do video)
+                preload="auto" = antes de interagir, ja vai carrega todas informaçoes sobre o video
+                preload="metadata" = só carrega informaçoes basicas sobre o video
+                poster="img.png" = colocar uma tumb para o video (aparece antes de iniciar o video)
+    -->
+
+    <!-- nao viavel -->
+    <video controls width="600" preload="auto" autoplay muted loop>
+        <source src="arq/comonaojogarcs.mp4" type="video/mp4">
+        <p>baixe aqui</p>
+    </video> 
+
+    <audio controls autoplay loop>
+        <source src="arq/best.mp3" type="audio/mp3">
+        <p>seu navegador nao suporta audio</p>
+    </audio>
+
+    <!--trazer conteudo externo-->
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/d38kHknf-7o" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+</body>
+
+</html>
