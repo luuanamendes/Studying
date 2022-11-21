@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionando Elementos</title>
+    <style>
+
+        /*padrão da position dos elementos é static
+        
+            relative
+                top, rigth, bottom, left
+
+            absolute
+                top, rigth, bottom, left, z-index
+
+            fixed
+                top, rigth, bottom, left, z-index
+
+            z-index - stacking (empilhamento)
+                "colocar ordem nas camadas, qual fica por cima"
+                naturalmento o ultimo elemento vai ficar em cima do anterior, para trocar a posição, usamos o z-index
+        */
+
+        .box{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 8px;
+        }
+        .box1{
+            background-color: red;
+            position: absolute; /*como se fosse uma segunda camada, não interfere no relativo, absoluto a tela ou ao pai */
+            top: 100px;
+            left: 20px;
+            z-index: 3; /*escrito primeiro, mas ficou em cima do segundo*/
+        }
+        .box2{
+            background-color: pink;
+            position: relative; /*muda a posição apenas desse elemento, em relação a tela ou ao elemento anterior*/
+            left: 40px;
+            top: 150px
+        }
+        .box3{
+            background-color: purple;
+            position: relative;
+            left: 60px;
+            top: 300px;
+        }
+        .box4{
+            background-color: blue;
+            position: fixed;/*como se fosse outra camada, o elemento fica fixo, mesmo quando rola a tela*/
+            top: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</body>
+</html>
