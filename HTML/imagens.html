@@ -11,5 +11,27 @@
     </a>
     
     <p style="background-image: url('arq/galaxy.jpg');">imagem aqui</p> <!--nao viavel-->
+
+    <!-- referenciar uma imagem -->
+    <a href="https://google.com">
+        <figure>
+            <img src="arq/galaxy.jpg" alt="galaxia" title="Galaxia da Lua" width="500px">
+
+            <figcaption>galaxy image - google</figcaption>
+        </figure>
+    </a>
+
+    <!--tag <svg> - para criar imagens vetorizadas-->
+        <svg style="background-color:gray"width="500" height="500" ><!--espaço na tela para criar o vetor-->
+            <circle cx="250" cy="250" r=50 stroke="black" stroke-width="2" fill="white"/>
+        </svg>
+        <br>
+
+        <!--criando o svg separado
+        
+            https://developer.mozilla.org/en-US/docs/Web/SVG/Element
+        -->
+        <img src="./arq/rect.svg" alt="quadrado svg">
+
 </body>
 </html>
