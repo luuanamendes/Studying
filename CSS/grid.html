@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: grid;
+
+            grid-template-areas: "header header" "main aside" "footer footer";
+
+            grid-template-rows: 50px 1fr 50px;
+            grid-template-columns: 1fr 200px;
+
+        }
+
+        header {
+
+            grid-area: header;
+
+            background-color: red;
+
+            /*flexbox dentro do elemento posicionado com o grid*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 100px;
+
+        }
+
+        main {
+
+            grid-area: main;
+
+            background-color: pink;
+
+        }
+
+        aside {
+
+            grid-area: aside;
+
+            background-color: purple;
+
+        }
+
+        footer {
+
+            grid-area: footer;
+
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>logo</div>
+        <div>home</div>
+        <div>imagens</div>
+    </header>
+    <main>principal</main>
+    <aside>secundario</aside>
+    <footer>rodapé</footer>
+</body>
+
+</html>
