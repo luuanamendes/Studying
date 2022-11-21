@@ -1,0 +1,93 @@
+/*
+
+    https://www.w3.org/TR/css-fonts-3/
+
+    font-family
+    font-weight
+    font-style
+    font-size
+
+    fallback - lista para ordem de prioridade de font (caso uma não de certo, usar a outra)
+
+    @font-face - dentro do link gerado no google fonts
+    @import - usar dentro do css
+    link - link da font, colocar no head do html(mais usado)
+
+*/
+
+/*
+    serif(serifada) - possuem hastes e prolongamentos no final das letras
+    sans-serif - não serifada
+*/
+
+p{
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+/*
+    normal | bold | bolder | lighter
+    100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+    
+    dependendo da família da fonte não conseguimos usar todos os pesos de fonte
+*/
+p {
+	font-weight: bold;
+}
+
+/*
+    normal | italic | oblique
+    nem toda familia de fonte permite usar o italic e oblique
+*/
+P {
+	font-style: italic;
+}
+
+/*
+    px | rem - pega do root | em - pega do parent
+    mais usados px e em
+
+*/
+p {
+	font-size: 1.2em;
+}
+
+/*
+    https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant
+*/
+
+p {
+	font-variant: small-caps; /*letra maiuscula - mas diferencia a primeira letra, deixando maior*/
+}
+
+/*
+    alargamento ou encolhimento da fonte
+    expanded | condensed | normal | 50% a 200%
+    não vai funcionar em todas as fontes
+*/
+p {
+	font-stretch: expanded;
+}
+
+p {
+	word-spacing: 1em; /*espaço entre as palavras*/
+    letter-spacing: 4px; /*espaço entre as letras*/
+    line-height: 1.5; /*espaço entre linhas*/
+    text-transform: uppercase; /*tranformação de texto - capitalize(primeira letra de todas as palavras maiuscula) | lowercase | upercase | none*/
+}
+
+
+/*
+    line: underline | overline | line-through
+    style: wavy | dotted | double | dashed | solid
+    color
+*/
+p {
+    text-decoration: wavy overline blue;
+    text-align: center; /* start | end | left | right | center | justify | match-parent */
+}
+
+/*shorthand*/
+p {
+    font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;
+  }
