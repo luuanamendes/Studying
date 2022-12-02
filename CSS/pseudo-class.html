@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <style>
+        *{
+            list-style: none;
+            line-height: 1.8;
+        }
+
+        .lista-item:first-child{
+            color: red;
+        }
+
+        .lista-item::first-letter{
+            text-transform: uppercase;
+        }
+
+        .lista-item:last-child{
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        .lista-item:nth-child(2){
+            text-decoration: underline wavy;
+        }
+
+        .lista-item:nth-child(2n){
+            font-weight: 800;
+        }
+
+        .lista-item a{
+            color: black;
+        }
+
+        .lista-item a:visited{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        <ul class="lista">
+            <li class="lista-item">batata</li>
+            <li class="lista-item">pão</li>
+            <li class="lista-item">macarrão</li>
+            <li class="lista-item">ervilha</li>
+            <li class="lista-item">banana</li>
+            <li class="lista-item">
+                <a href="https://www.google.com/search?q=lanche&sxsrf=ALiCzsaQALLqnblW1lhwePMkVUJc6z_Xkg:1669904571075&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi72ZGmz9j7AhWVppUCHfF_BXgQ_AUoAnoECAIQBA&biw=871&bih=881&dpr=1.1">lanche</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
