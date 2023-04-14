@@ -48,3 +48,7 @@
 	colocar o nome de todos os aquivos e pastas que eu nao quero que suba dentro do aquivo de texto .gitignore
 	git status (para conferir se deu certo)
 	ai pode dar o git add .
+
+-git remote set-url (Change your remote's URL)
+
+https://docs.github.com/pt/get-started
