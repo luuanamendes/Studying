@@ -51,4 +51,6 @@
 
 -git remote set-url (Change your remote's URL)
 
+-git bisect (Use binary search to find the commit that introduced a bug)
+
 https://docs.github.com/pt/get-started
